@@ -1,9 +1,11 @@
-# Fabric Example Mod
+## Descriptions
+This mod does something very simple.
 
-## Setup
+It will detect if there are any texture packs or cheat mods installed on the client.
+If so, the player will be kicked from the server
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+I recommend using this mod for small private servers.
+Most players will not know how to counteract this mod.
 
-## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+This mod will be perfect if you don't want your friends to cheat on the server (Yes, there are always some who cheat)
