@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "anticheater",
+  "version": "${version}",
+
+  "name": "anticheater",
+  "description": "A simple Anti Cheater",
+  "authors": [
+    "Skyfy16"
+  ],
+  "contact": {},
+
+  "license": "MIT",
+  "icon": "assets/anticheater/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ch.skyfy.anticheater.AntiCheater"
+    ],
+    "client": [
+      "ch.skyfy.anticheater.client.AntiCheaterClient"
+    ]
+  },
+  "mixins": [
+    "anticheater.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
