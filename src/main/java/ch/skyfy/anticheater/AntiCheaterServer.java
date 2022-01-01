@@ -30,7 +30,8 @@ public class AntiCheaterServer {
             });
         });
         ServerPlayConnectionEvents.JOIN.register((handler, sender, client) -> {
-            // If the player who logs in has not installed the modpack, or does not have the "skyfymodclient" mod, he will be kicked after 60 secondes
+            // TODO send to client suspectsWords and excludedWords
+            // If the player who logs in has not installed the modpack, or does not have the "AntiCheater" mod, he will be kicked after 80 secondes
             Executors.newSingleThreadScheduledExecutor(r -> new Thread(r) {{
                 setDaemon(true);
             }}).schedule(() -> {
